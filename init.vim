@@ -8,11 +8,11 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 call plug#begin(stdpath('data') . '/plugged')
  Plug 'mbbill/undotree'
  Plug 'https://github.com/junegunn/vim-github-dashboard.git'
- "Plug 'https://github.com/adelarsq/neoline.vim'
  Plug 'altercation/vim-colors-solarized'
+ Plug 'vim-airline/vim-airline'
  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
  Plug 'kaicataldo/material.vim', { 'branch': 'main' }
- Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
  Plug 'scrooloose/nerdtree'
  Plug 'fannheyward/coc-pyright'
  Plug 'junegunn/fzf.vim'
@@ -53,3 +53,10 @@ endif
 "kite detection problem
    set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
    set laststatus=2  " always display the status line
+
+"added top bar 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
+
