@@ -8,8 +8,11 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 call plug#begin(stdpath('data') . '/plugged')
  Plug 'mbbill/undotree'
  Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+ "Plug 'https://github.com/adelarsq/neoline.vim'
  Plug 'altercation/vim-colors-solarized'
  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+ Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+ Plug 'itchyny/lightline.vim'
  Plug 'scrooloose/nerdtree'
  Plug 'fannheyward/coc-pyright'
  Plug 'junegunn/fzf.vim'
@@ -25,3 +28,28 @@ call plug#end()
 set relativenumber
 syntax enable
 filetype plugin indent on
+
+
+
+"added material color sceme
+if (has('nvim'))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
+endif
+if (has('termguicolors'))
+  set termguicolors
+endif
+"let g:lightline = { 'colorscheme': 'material_vim' }
+"let g:material_terminal_italics = 1
+"let g:material_theme_style = 'darker-community'
+"colorscheme material
+
+" Fix italics in Vim
+if !has('nvim')
+  let &t_ZH="\e[3m"
+  let &t_ZR="\e[23m"
+endif
+
+
+"kite detection problem
+   set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
+   set laststatus=2  " always display the status line
