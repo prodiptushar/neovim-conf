@@ -45,3 +45,6 @@ nnoremap <Leader>O O<Esc>^Da
 
 "FZF keybinding
 nnoremap <C-p> :FZF ~<CR>
+"adding leader key
+let mapleader = " " 
+

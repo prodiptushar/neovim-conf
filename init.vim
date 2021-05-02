@@ -1,14 +1,16 @@
 source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/vim-plug/plug.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 
 
 "vim plug plugins"
-call plug#begin(stdpath('data') . '/plugged')
+ call plug#begin(stdpath('data') . '/plugged')
  Plug 'mbbill/undotree'
  Plug 'https://github.com/junegunn/vim-github-dashboard.git'
  Plug 'altercation/vim-colors-solarized'
+ Plug 'tpope/vim-surround'
  Plug 'vim-airline/vim-airline'
  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
  Plug 'kaicataldo/material.vim', { 'branch': 'main' }
@@ -17,6 +19,7 @@ call plug#begin(stdpath('data') . '/plugged')
  Plug 'fannheyward/coc-pyright'
  Plug 'junegunn/fzf.vim'
  Plug 'airblade/vim-rooter'
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'jremmen/vim-ripgrep'
  Plug 'ervandew/supertab'
  Plug 'vim-utils/vim-man'
