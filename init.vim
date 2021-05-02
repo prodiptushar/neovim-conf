@@ -4,7 +4,6 @@ source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/vim-plug/plug.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 
-
 "vim plug plugins"
  call plug#begin(stdpath('data') . '/plugged')
  Plug 'mbbill/undotree'
@@ -22,7 +21,7 @@ source $HOME/.config/nvim/plug-config/fzf.vim
  Plug 'ycm-core/YouCompleteMe'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'jremmen/vim-ripgrep'
- Plug 'ervandew/supertab'
+ Plug 'https://github.com/sickill/vim-monokai.git'
  Plug 'vim-utils/vim-man'
  Plug 'tpope/vim-fugitive'
  Plug 'lyuts/vim-rtags' 
@@ -30,7 +29,6 @@ call plug#end()
 
 "set some feachers"
 set relativenumber
-syntax enable
 filetype plugin indent on
 
 
@@ -45,7 +43,8 @@ endif
 "let g:lightline = { 'colorscheme': 'material_vim' }
 "let g:material_terminal_italics = 1
 "let g:material_theme_style = 'darker-community'
-"colorscheme material
+syntax enable
+colorscheme monokai 
 
 " Fix italics in Vim
 if !has('nvim')
