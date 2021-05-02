@@ -19,6 +19,7 @@ source $HOME/.config/nvim/plug-config/fzf.vim
  Plug 'fannheyward/coc-pyright'
  Plug 'junegunn/fzf.vim'
  Plug 'airblade/vim-rooter'
+ Plug 'ycm-core/YouCompleteMe'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'jremmen/vim-ripgrep'
  Plug 'ervandew/supertab'
