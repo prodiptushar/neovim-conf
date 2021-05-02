@@ -12,13 +12,13 @@ source $HOME/.config/nvim/plug-config/fzf.vim
  Plug 'tpope/vim-surround'
  Plug 'vim-airline/vim-airline'
  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
- Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+"Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 "Plug 'itchyny/lightline.vim'
  Plug 'scrooloose/nerdtree'
  Plug 'fannheyward/coc-pyright'
  Plug 'junegunn/fzf.vim'
  Plug 'airblade/vim-rooter'
- Plug 'ycm-core/YouCompleteMe'
+"Plug 'ycm-core/YouCompleteMe'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'jremmen/vim-ripgrep'
  Plug 'https://github.com/sickill/vim-monokai.git'
