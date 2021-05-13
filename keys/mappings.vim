@@ -1,4 +1,4 @@
-" Better nav for omnicomplete
+"  Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
@@ -20,6 +20,7 @@ nnoremap <c-u> viwU<Esc>
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
+nnoremap <C-w> :bw<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
@@ -47,4 +48,14 @@ nnoremap <Leader>O O<Esc>^Da
 nnoremap <C-p> :FZF ~<CR>
 "adding leader key
 let mapleader = " " 
+
+
+"insert mode nav
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+"CocCommand && CocLocalConfig keybinding
+nnoremap cc :CocCommand<CR>
+nnoremap cl :CocLocalConfig<CR>
 

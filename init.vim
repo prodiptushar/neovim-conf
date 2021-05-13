@@ -3,6 +3,7 @@ source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/vim-plug/plug.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
+source $HOME/.config/nvim/plug-config/rnvimr.vim
 
 "vim plug plugins"
  call plug#begin(stdpath('data') . '/plugged')
@@ -12,6 +13,7 @@ source $HOME/.config/nvim/plug-config/fzf.vim
  Plug 'altercation/vim-colors-solarized'
  Plug 'tpope/vim-surround'
  Plug 'https://github.com/tpope/vim-vividchalk.git'
+ Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
  Plug 'neovim/nvim-lspconfig'
  Plug 'vim-airline/vim-airline'
  Plug 'sansyrox/vim-python-virtualenv'
