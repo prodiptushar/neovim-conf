@@ -1,0 +1,6 @@
+require "pack.plugins"
+require "keybindings"
+require "settings"
+
+
+vim.opt.ignorecase = true
